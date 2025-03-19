@@ -1,7 +1,7 @@
  GDP Indicator Comparison
 
 ## Overview
-This project is a **Gross Domestic Product (GDP) Indicator Comparison** tool that allows users to compare the GDP of two different countries. The application fetches GDP data from an external API and visualizes the results in a bar chart.
+This project is a **Gross Domestic Product (GDP) Indicator Comparison** tool that allows users to compare the GDP of two different countries. The application fetches GDP data from Trading economics  external API and visualizes the results in a bar chart.
 
 ## Features
 - Users can input two country names.
