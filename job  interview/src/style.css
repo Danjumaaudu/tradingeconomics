@@ -1,0 +1,207 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.Nav-bar {
+  background-color: #333333;
+  color: #F2F2F2;
+  padding: 9px 6px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.T-E {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  padding-left: 26px;
+}
+
+.comp {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.econ {
+  color: #858585;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.GDP-comp{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.GDP-comp h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.gdp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-input {
+  padding: 15px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  width: 250px;
+  transition: background-color 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .gdp-form {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .chart-container {
+        flex: 2;
+        height: 40vh; /* Viewport-height based sizing */
+        min-height: 300px; /* Minimum height */
+    }
+    
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .form-label {
+        min-width: 80px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    
+    .form-input {
+        flex: 1;
+    }
+       
+
+}
+
+@media (max-width: 767px) {
+    .Nav-bar {
+        flex-direction: row;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .gdp-comp {
+        padding: 15px;
+    }
+    
+    .chart-container {
+        height: 35vh; /* Slightly smaller on tablets */
+        min-height: 250px;
+    }
+       
+}
+
+@media (max-width: 480px) {
+  .Nav-bar {
+    flex-direction: row;
+    padding: 10px;
+    font-size: 10px;
+}
+
+    .chart-container {
+        height: 30vh; /* Even smaller on phones */
+        min-height: 200px;
+    }
+    
+    .gdp-comp h2 {
+        font-size: 16px;
+    }
+    
+    .form-input {
+        width: 100%;
+    }
+    
+    .submit-button {
+        width: 100%;
+    
+    }
+}
+
+
+#gdpChart {
+    width: 100% !important;
+    height: 100% !important;
+}
